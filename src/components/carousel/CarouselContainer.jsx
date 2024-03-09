@@ -1,9 +1,12 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import img1 from '../../assets/carousel/img1.jpeg';
+import img1 from '../../assets/carousel/img6.jpeg';
 import img2 from '../../assets/carousel/img2.jpeg';
-import img3 from '../../assets/carousel/img3.jpeg';
-import img4 from '../../assets/carousel/img4.jpeg';
+import img3 from '../../assets/carousel/img11.jpeg';
+import img4 from '../../assets/carousel/img12.jpeg';
+import img9 from '../../assets/carousel/img9.jpeg';
+import img7 from '../../assets/carousel/img7.jpeg';
+import img10 from '../../assets/carousel/img10.jpeg';
 
 const responsiveImageHero = {
     desktop: {
@@ -21,7 +24,7 @@ const responsiveImageHero = {
 };
 
 const images = [
-    img1, img2, img3, img4
+    img1, img2, img3, img4, img9, img7, img10
 ];
 
 const CarouselContainer = () => {
@@ -33,7 +36,7 @@ const CarouselContainer = () => {
             slidesToSlide={1}
             responsive={responsiveImageHero}
         >
-            {images.slice(0, 4).map((image, id) => {
+            {images.slice(0, 9).map((image, id) => {
                 return (
                     <img
                         key={id}

@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
+
+
+
+import img1 from '../../assets/carousel/img6.jpeg';
+// import img2 from '../../assets/carousel/img2.jpeg';
+import img3 from '../../assets/carousel/img11.jpeg';
+import img4 from '../../assets/carousel/img12.jpeg';
+import img9 from '../../assets/carousel/img9.jpeg';
+import img7 from '../../assets/carousel/img7.jpeg';
+import img10 from '../../assets/carousel/img10.jpeg';
+
+
 const About = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = [
-        "https://i.ibb.co/FhgPJt8/Rectangle-116.png",
-        "https://images.pexels.com/photos/13422379/pexels-photo-13422379.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg?auto=compress&cs=tinysrgb&w=600",
+        img1, img3, img4, img7, img9, img10 
     ];
 
     useEffect(() => {
